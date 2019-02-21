@@ -28,43 +28,47 @@
     if (empty($_POST["fullname"])) {
         $fullnameErr = "Fullname is required";
       } else {
-        $fullname = test_input($_POST["fullname"]);
+        $fullname = $_POST["fullname"];
     }
 
     if (empty($_POST["email"])) {
         $emailErr = "Email is required";
       } else {
-        $email = test_input($_POST["email"]);
+        $email = $_POST["email"];
     }
 
     if (empty($_POST["gender"])) {
         $genderErr = "Gender is required";
       } else {
-        $gender = test_input($_POST["gender"]);
+        $gender = $_POST["gender"];
     }
 
     if (empty($_POST["phone"])) {
         $phoneErr = "Phone is required";
       } else {
-        $phone = test_input($_POST["phone"]);
+        $phone = $_POST["phone"];
     }
 
     if (!preg_match("|^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})|is", $email)) { 
-        show_error("<br /> Email address does not exist"); 
     } 
       
-    $fp = fopen("formdata.txt", "a");
-    $savestring = $fullname . "," . $email . "," . $gender . "," . $phone . "\n";
+    $fp = fopen("formdata.csv", "a");
+    $savestring = $fullname . ",  " . $email . ",  " . $gender . ",  " . $phone . "\n\n";
 
     fwrite($fp, $savestring);
     fclose($fp);
 
-    echo "<h1>Ačiū, mes Jums paskambinsim</h1>";
+    echo "";
       
     ?>
-    
-      <p>Ваше сообщение было успешно отправлено!</p> 
-      <p>На <a href="index.html">Главную >>></a></p>
+       <div class="col-md-12 text-center"> 
+      <h1 class="probootstrap-animate"><span style="color:blue">Ačiū už anketą.</span></h1>
+                <div class="probootstrap-subtitle probootstrap-animate">
+                    <h2><span style="color:blue">Mes Jums paskambinsim. </span></h2>
+                </div>
+      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk/" target="_blank">Į pradžią <i class=" icon-chevron-right"></i></a></p>
+      </div>
+      
       
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>

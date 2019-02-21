@@ -1,3 +1,0 @@
-fullname,email,gender,phone
-
-
