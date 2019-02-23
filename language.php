@@ -19,23 +19,18 @@
     $date = date("d.m.y");
     $backurl = "index.html";
 
-    $full_nameErr = $emailErr = $genderErr = $phoneErr ="";
-    $full_name = $email = $gender = $phone ="";
+    $fullnameErr = $emailErr = $genderErr = $phoneErr ="";
+    $fullname = $email = $gender = $phone ="";
 
-    $full_name = htmlspecialchars($_POST["full_name"]);
+    $fullname = htmlspecialchars($_POST["fullname"]);
     $email = htmlspecialchars($_POST["email"]);
     $gender = htmlspecialchars($_POST["gender"]);
     $phone = htmlspecialchars($_POST["phone"]);
       
-    $full_name = urldecode($_POST["full_name"]);
-    $email = urldecode($_POST["email"]);
-    $gender = urldecode($_POST["gender"]);
-    $phone = urldecode($_POST["phone"]);
-      
-    if (empty($_POST["full_name"])) {
-        $full_nameErr = "Full_name is required";
+    if (empty($_POST["fullname"])) {
+        $fullnameErr = "Fullname is required";
       } else {
-        $full_name = $_POST["full_name"];
+        $fullname = $_POST["fullname"];
     }
 
     if (empty($_POST["email"])) {
@@ -60,7 +55,7 @@
     } 
       
     $fp = fopen("formdata.csv", "a");
-    $savestring = $full_name . ",  " . $email . ",  " . $gender . ",  " . $phone . "\n\n";
+    $savestring = $fullname . ",  " . $email . ",  " . $gender . ",  " . $phone . "\n\n";
 
     fwrite($fp, $savestring);
     fclose($fp);
