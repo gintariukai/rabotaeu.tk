@@ -1,9 +1,9 @@
 /*!==============================
  * Theme Name: Rabotavlitve
- * Theme URL: http://rabotavlitve.eu/
+ * Theme URL: http://rabotaeu.tk/
  * Author: Rabotavlitve
- * Author URL: https://rabotavlitve.eu
- * License: (rabotavlitve.eu/license)
+ * Author URL: https://rabotaeu.tk
+ * License: (rabotaeu.tk/license)
  */
 @font-face {
   font-family: 'icomoon';
@@ -974,7 +974,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 10px;
   top: 0px;
   width: 45px;
-  display: inltial;
+  display: inherit;
 }
 
 .probootstrap-box {
@@ -1327,7 +1327,7 @@ a:hover, a:focus, a:active {
 .flexslider .slides > li {
   background-size: cover;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .flexslider .slides > li.overlay:before {

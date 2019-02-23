@@ -74,7 +74,7 @@
       <div class="probootstrap-subtitle probootstrap-animate">
         <h2><span style="color:blue">Mes Jums paskambinsim. </span></h2>
       </div>
-      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk/" target="_blank">Į pradžią <i class=" icon-chevron-right"></i></a></p>
+      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk/">Į pradžią <i class=" icon-chevron-right"></i></a></p>
     </div>
       
       
