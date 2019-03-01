@@ -3,10 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Darbas, Mokymai">
-    <title>RabotaEU</title>
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>RabotaEU - Anketa</title>
+    <meta name="description" content="RataEU - Darbas, Mokymai rabotaeu.tk">
+    <meta name="keywords" content="Darbas, Mokymai, rabotaeu, rabotavlitve, uchebaeu, uchebavlitve">
+    
+    <link rel="canonical" href="https://rabotaeu.tk/index.html">
+    <link rel="canonical" href="https://rabotaeu.tk/partneriai.html">
+    <link rel="canonical" href="https://rabotaeu.tk/darbdaviai.html">
+    <link rel="canonical" href="https://rabotaeu.tk/kontaktai.html">
+    
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -35,27 +43,18 @@
     if (!preg_match("|^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})|is", $email)) { 
     }
       
-    // if (mail("gintariukai@yahoo.com", "Заказ с сайта", "Full_name:" .$full_name. ".Email:" .$email , "From: gintariukai@hotmail.com \r\n")) {
-    //    echo "сообщение успешно отправлено";
-    // } else {
-    //    echo "при отправке сообщения возникли ошибки";
-    // }
-      
-    if (isset($_POST["submit"])){
+    if (isset($_POST["submit"])) {
     $to = "gintariukai@yahoo.com"; // Здесь нужно написать e-mail, куда будут приходить письма
-    $from = $_POST["gintariukai@hotmail.com"]; // // Здесь нужно написать e-mail, от кого будут приходить письма
+    $from = $_POST["email"]; // // Здесь нужно написать e-mail, от кого будут приходить письма
     $full_name = $_POST["full_name"];
     $subject = "Форма отправки сообщений с сайта";
-    $subject2 = "Copy of your form submission";
     $message = "Full_name: ". $full_name . " | Email: "  . $_POST["email"] . " | Phone: " . $_POST["phone"];
-    $message2 = "Here is a copy of your message " . $full_name . "\n\n" . $_POST["message"];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
+    $headers = "From: . $from \r\n";
 
     mail($to,$subject,$message,$headers);
-    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
-    echo "Сообщение отправлено. Спасибо Вам " . $full_name . ", мы скоро свяжемся с Вами.";
+        
+    echo "Сообщение отправлено.<br /><br /> Спасибо Вам " . $full_name . ", мы скоро свяжемся с Вами.";
     echo "<br /><br /><a href='https://rabotaeu.tk'>Вернуться на сайт.</a>";
 
     }
@@ -66,11 +65,15 @@
     fwrite($fp, $savestring);
     fclose($fp);
 
-      //    echo "";
+    //    echo "Ačiū už Jūsų domėjimąsi darbu Lietuvoje.";
+      
+    ini_set("display_errors","On");
+    
+    error_reporting("E_ALL");
       
     ?>
     <div class="col-md-12 text-center"> 
-      <h1 class="probootstrap-animate"><span style="color:blue">Ačiū už anketą.</span></h1>
+      <h1 class="probootstrap-animate"><span style="color:blue">Ačiū už Jūsų domėjimąsi darbu Lietuvoje.</span></h1>
       <div class="probootstrap-subtitle probootstrap-animate">
         <h2><span style="color:blue">Mes Jums paskambinsim. </span></h2>
       </div>

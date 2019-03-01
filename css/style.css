@@ -83,7 +83,7 @@ a {
 
 a:hover, a:focus, a:active {
   color: black;
-  text-decoration: none;
+  text-decoration: inherit;
 }
 
 .probootstrap-header {
@@ -503,6 +503,10 @@ a:hover, a:focus, a:active {
   z-index: 2;
 }
 
+.probootstrap-section {
+    background: #ecedee;
+}
+
 .probootstrap-section.probootstrap-section-extra {
   padding: 4em 0;
   margin-bottom: 20em;
@@ -548,19 +552,20 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-section.probootstrap-section-colored, .probootstrap-section.probootstrap-section-dark {
-  background: #6078EA;
+  background: #ffffff;
 }
 
 .probootstrap-section.probootstrap-section-colored .section-heading h2, .probootstrap-section.probootstrap-section-colored .section-heading .heading-with-icon, .probootstrap-section.probootstrap-section-dark .section-heading h2, .probootstrap-section.probootstrap-section-dark .section-heading .heading-with-icon {
-  color: white;
+  color: #333;
 }
 
+
 .probootstrap-section.probootstrap-section-colored .section-heading p, .probootstrap-section.probootstrap-section-dark .section-heading p {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(37, 37, 37, 0.6);
 }
 
 .probootstrap-section.probootstrap-section-colored .heading-with-icon, .probootstrap-section.probootstrap-section-dark .heading-with-icon {
-  color: #ffffff;
+  color: #333;
 }
 
 .probootstrap-section.probootstrap-section-colored .heading-with-icon i, .probootstrap-section.probootstrap-section-dark .heading-with-icon i {
@@ -689,7 +694,7 @@ a:hover, a:focus, a:active {
 
 .probootstrap-footer {
   padding: 7em 0 2em 0;
-  background: #ecedee;
+  background: #f6f6f6;
   position: relative;
 }
 
