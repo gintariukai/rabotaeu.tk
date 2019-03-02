@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RabotaEU - Anketa</title>
+    <title>RabotaEU - Darbas, Mokymai, kvalifikacijos įgijimas Europos Sąjungoje įstatymų numatyta tvarka,</title>
     <meta name="description" content="RataEU - Darbas, Mokymai rabotaeu.tk">
-    <meta name="keywords" content="Darbas, Mokymai, rabotaeu, rabotavlitve, uchebaeu, uchebavlitve">
+    <meta name="keywords" content="Darbas, Mokymai, rabotaeu, rabotavlitve, workready">
     
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+      
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
       
@@ -40,14 +45,16 @@
       
     if (isset($_POST["submit"])) {
     $to = "gintariukai@yahoo.com"; // Здесь нужно написать e-mail, куда будут приходить письма
-    $from = $_POST["email"]; // // Здесь нужно написать e-mail, от кого будут приходить письма
+    $from = gintariukai@hotmail.com; // // Здесь нужно написать e-mail, от кого будут приходить письма
     $full_name = $_POST["full_name"];
     $subject = "Форма отправки сообщений с сайта";
     $message = "Full_name: ". $full_name . " | Email: "  . $_POST["email"] . " | Phone: " . $_POST["phone"];
 
-    $headers = "From: . $from \r\n";
+    $headers = "From:" . $from;
 
     mail($to,$subject,$message,$headers);
+        
+    echo mail ("gintariukai@hotmail.com" , "testmailfunction" , "Oj" , $headers);
         
     echo "Сообщение отправлено.<br /><br /> Спасибо Вам " . $full_name . ", мы скоро свяжемся с Вами.";
     echo "<br /><br /><a href='https://rabotaeu.tk'>Вернуться на сайт.</a>";
