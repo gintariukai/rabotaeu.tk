@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +44,7 @@
     }
       
     if (isset($_POST["submit"])) {
-    $to = "gintariukai@yahoo.com"; // Здесь нужно написать e-mail, куда будут приходить письма
+    $to = "gintariukai@hotmail.com"; // Здесь нужно написать e-mail, куда будут приходить письма
     $from = $_POST["email"]; // // Здесь нужно написать e-mail, от кого будут приходить письма
     $full_name = $_POST["full_name"];
     $subject = "Форма отправки сообщений с сайта";
@@ -54,11 +54,6 @@
 
     mail($to,$subject,$message,$headers);
         
-    echo mail ("gintariukai@hotmail.com" , "testmailfunction" , "Oj" , $headers);
-        
-    echo "Сообщение отправлено.<br /><br /> Спасибо Вам " . $full_name . ", мы скоро свяжемся с Вами.";
-    echo "<br /><br /><a href='https://rabotaeu.tk'>Вернуться на сайт.</a>";
-
     }
       
     $fp = fopen("formdata.csv", "a");
@@ -79,9 +74,8 @@
       <div class="probootstrap-subtitle probootstrap-animate">
         <h2><span style="color:blue">Mes Jums paskambinsim. </span></h2>
       </div>
-      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk/">Į pradžią <i class=" icon-chevron-right"></i></a></p>
+      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk">Į pradžią <i class=" icon-chevron-right"></i></a></p>
     </div>
-      
       
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
