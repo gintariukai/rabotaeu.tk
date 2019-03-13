@@ -45,7 +45,7 @@
       
     if (isset($_POST["submit"])) {
     $to = "gintariukai@hotmail.com"; // Здесь нужно написать e-mail, куда будут приходить письма
-    $from = $_POST["email"]; // // Здесь нужно написать e-mail, от кого будут приходить письма
+    $from = "gintaras.jakuntavicius@gmail.com"; // // Здесь нужно написать e-mail, от кого будут приходить письма
     $full_name = $_POST["full_name"];
     $subject = "Форма отправки сообщений с сайта";
     $message = "Full_name: ". $full_name . " | Email: "  . $_POST["email"] . " | Phone: " . $_POST["phone"];

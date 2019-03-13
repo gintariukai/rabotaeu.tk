@@ -15,7 +15,7 @@
   <body>
       
     <?php
-    	mail("gintariukai@hotmail.com", "tutorial on testing", "testing mail function on localhost", "From: DoNotReply@hotmail.com");   
+    	mail("gintariukai@yahoo.com", "Sample mail", "Sample content", "From: gintaras.jakuntavicius@gmail.com");   
       
     ?>
     
