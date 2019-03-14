@@ -22,11 +22,13 @@
   </head>
   <body>
 
-  <!-- START: header -->
+    <!-- START: header -->
   <header role="banner" class="probootstrap-header probootstrap-header-no-intro">
     <div class="container-fluid">
       <!-- <div class="row"> -->
-        <a href="http://workready.lt/en" target="_blank" class="probootstrap-logo"><img alt="logo" src="img/WR_logo.png"></a>
+        <a href="http://workready.lt/en" target="_blank" class="probootstrap-logo">
+            <img alt="logo" src="img/WR_logo.png">
+        </a>
         
         <a href="index-ru.html" class="probootstrap-burger-menu visible-xs" ><i>Меню</i></a>
         <div class="mobile-menu-overlay"></div>
@@ -42,7 +44,7 @@
                 <img alt="LTU" src="img/favicon_LTU.ico"></a>
           </ul>
           <div class="extra-text visible-xs">
-            <a href="index-ru.html" class="probootstrap-burger-menu"><i>Меню</i></a>
+            <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
             <h5>Соц.сети</h5>
             <ul class="social-buttons">
               <li><a href="tel:+37068744544"><i class="icon-skype"></i></a></li>
@@ -60,43 +62,88 @@
   </header>
   <!-- END: header -->
   
+  <!-- START: section -->
   <section class="probootstrap-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center section-heading">
-          <h1>Анкета</h1>
-        </div>
+      <div class="col-md-8 col-md-offset-2 section-heading mb50 text-center probootstrap-animate">
+        <h1>Партнёры</h1>
       </div>
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form action="process-form-data.php" method="post" class="probootstrap-form probootstrap-form-box">
-            <div class="form-group">
-              <label for="full_name">Имя, Фамилия<span class="error"> * </span></label>
-              <input type="text" name="full_name" id="full_name" required class="form-control">
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <div class="probootstrap-block-image">
+            <figure><img src="img/UKR_poshta6.jpg" alt="Украинская почта ukrposhta.ua"></figure>
+            <div class="text">
+              <span class="date">Январь 21, 2019</span>
+              <h3><a href="https://ukrposhta.ua/ru/pro-pidpriyemstvo/misiya-ta-cinnosti/" target="_blank">Украинская почта</a></h3>
+              <p>Ценности— ответственное отношение к каждому клиенту, обеспечение высокого качества.</p>
+              <p><a href="https://ukrposhta.ua/ru/pro-pidpriyemstvo/misiya-ta-cinnosti/" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
             </div>
-            <div class="form-group">
-              <label for="email">Ел. почта<span class="error"> * </span></label>
-              <input type="email" name="email" id="email" required class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="gender">Пол<span class="error"> * </span></label>
-              <input type="text" name="gender" id="gender" required class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="phone">Телефон<span class="error"> * </span></label>
-              <input type="tel" name="phone" id="phone" required class="form-control">
-            </div>
-            <div class="form-group mb50">
-              <input type="submit" value="Выслать" class="btn btn-primary btn-block">
-            </div>
-            <div class="form-group text-center">
-              <p class="form-note-link"><small><span class="error"> * </span>Обязательное поле</small> <br> </p>
-            </div>
-          </form>
+          </div>
         </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <div class="probootstrap-block-image">
+            <figure><img src="img/LTVDI.jpg" alt="Литовская Государственная инспекция труда www.vdi.lt"></figure>
+            <div class="text">
+              <span class="date">Январь 21, 2019</span>
+              <h3><a href="https://www.vdi.lt/Forms/Rusu.aspx" target="_blank">Литовская Государственная инспекция труда</a></h3>
+              <p>Миссия – оберегать здоровье, жизнь и трудоспособность работников.</p>
+              <p><a href="https://www.vdi.lt/Forms/Rusu.aspx" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <div class="probootstrap-block-image">
+            <figure><img src="img/europos_sajungos_veliava.jpg" alt="Европейский Союз"></figure>
+            <div class="text">
+              <span class="date">Январь 21, 2019</span>
+              <h3><a href="https://europa.eu/european-union/about-eu/working_en" target="_blank">Европейский Союз</a></h3>
+              <p>В учереждениях ЕС работают более 40 000 мужчин и женщин из 28 стран-членов ЕС.</p>
+              <p><a href="https://europa.eu/european-union/about-eu/working_en" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <div class="probootstrap-block-image">
+            <figure><img src="img/UKR_VDI.jpg" alt="Государственная инспекция труда Украины dsp.gov.ua"></figure>
+            <div class="text">
+              <span class="date">Январь 21, 2019</span>
+              <h3><a href="http://dsp.gov.ua/biohrafiia/" target="_blank">Государственная инспекция труда Украины</a></h3>
+              <p>Передачі функцій для реалізації державної політики щодо охорони праці</p>
+              <p><a href="http://dsp.gov.ua/biohrafiia/" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-md-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <div class="probootstrap-block-image">
+            <figure><img src="img/UKR_soc_min.jpg" alt="Министерство социального обеспечения Украины www.msp.gov.ua"></figure>
+            <div class="text">
+              <span class="date">Январь 21, 2019</span>
+              <h3><a href="https://www.msp.gov.ua/ru/main/Pro-ministerstvo.html" target="_blank">Министерство социального обеспечения Украины</a></h3>
+              <p>Международная деятельность, консультеции, вакансии.</p>
+              <p><a href="https://www.msp.gov.ua/ru/main/Pro-ministerstvo.html" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <div class="probootstrap-block-image">
+            <figure><img src="img/LVPS.jpg" alt="Lietuvos profesinių sąjungų Aljansas lvps.lt"></figure>
+            <div class="text">
+              <span class="date">Sausio 21, 2019</span>
+              <h3><a href="https://lvps.lt/" target="_blank">Литовский профсоюзный Альянс</a></h3>
+              <p>Работа иностранцев на предприятиях Литовской Республики допускается путем применения.</p>
+              <p><a href="https://lvps.lt/" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
       </div>
+        
     </div>
   </section>
+  <!-- END: section -->
   
   <!-- START: footer -->
   <footer role="contentinfo" class="probootstrap-footer">

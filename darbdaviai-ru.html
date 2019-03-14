@@ -22,11 +22,13 @@
   </head>
   <body>
 
-  <!-- START: header -->
+    <!-- START: header -->
   <header role="banner" class="probootstrap-header probootstrap-header-no-intro">
     <div class="container-fluid">
       <!-- <div class="row"> -->
-        <a href="http://workready.lt/en" target="_blank" class="probootstrap-logo"><img alt="logo" src="img/WR_logo.png"></a>
+        <a href="http://workready.lt/en" target="_blank" class="probootstrap-logo">
+            <img alt="logo" src="img/WR_logo.png">
+        </a>
         
         <a href="index-ru.html" class="probootstrap-burger-menu visible-xs" ><i>Меню</i></a>
         <div class="mobile-menu-overlay"></div>
@@ -42,7 +44,7 @@
                 <img alt="LTU" src="img/favicon_LTU.ico"></a>
           </ul>
           <div class="extra-text visible-xs">
-            <a href="index-ru.html" class="probootstrap-burger-menu"><i>Меню</i></a>
+            <a href="#" class="probootstrap-burger-menu"><i>Меню</i></a>
             <h5>Соц.сети</h5>
             <ul class="social-buttons">
               <li><a href="tel:+37068744544"><i class="icon-skype"></i></a></li>
@@ -60,43 +62,35 @@
   </header>
   <!-- END: header -->
   
+  <!-- START: section -->
   <section class="probootstrap-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center section-heading">
-          <h1>Анкета</h1>
+        <div class="col-md-8 col-md-offset-2 section-heading mb50 text-center">
+          <h2>ТОП Работодатели</h2>
+          <p class="lead">«Verslo žinios» публикует десять крупнейших работодателей (более 250 сотрудников), которые вошли в первую десятку на выборах «Самый желанный работодатель 2018».</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form action="process-form-data.php" method="post" class="probootstrap-form probootstrap-form-box">
-            <div class="form-group">
-              <label for="full_name">Имя, Фамилия<span class="error"> * </span></label>
-              <input type="text" name="full_name" id="full_name" required class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="email">Ел. почта<span class="error"> * </span></label>
-              <input type="email" name="email" id="email" required class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="gender">Пол<span class="error"> * </span></label>
-              <input type="text" name="gender" id="gender" required class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="phone">Телефон<span class="error"> * </span></label>
-              <input type="tel" name="phone" id="phone" required class="form-control">
-            </div>
-            <div class="form-group mb50">
-              <input type="submit" value="Выслать" class="btn btn-primary btn-block">
-            </div>
-            <div class="form-group text-center">
-              <p class="form-note-link"><small><span class="error"> * </span>Обязательное поле</small> <br> </p>
-            </div>
-          </form>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="mb30">UAB „Bitė Lietuva“</h3>
+          <p>Согласно первой десятке рейтинга, есть две телекоммуникационные компании, которые в прошлом году продвинулись дальше всех в борьбе за наиболее желательное имя работодателя. Это – ЗАО „Bitė Lietuva“ ir АО „Telia Lietuva“.</p>
+          <p><a href="https://www.vz.lt/vadyba/personalo-valdymas/2018/05/23/geidziamiausias-darbdavys-2018-top10-didziuju-darbdaviu/" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="mb30">UAB „Circle K Lietuva“</h3>
+          <p>Другие работодатели на вершине рейтинга этого года не попали в финал прошлого года. Среди новичков: „Circle K Lietuva“, владеющая сетью автозаправочных станций, и ЗАО „Felit“, владеющая магазином „Ikea“ в Вильнюсе.</p>
+          <p><a href="https://www.vz.lt/vadyba/personalo-valdymas/2018/05/23/geidziamiausias-darbdavys-2018-top10-didziuju-darbdaviu/" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="mb30">UAB „DXC Technology“</h3>
+          <p>В этом году в рейтинг попали еще два сервисных центра: „Western Union“  и „DXC Technology“ (ранее  „CSC Baltic“).</p>
+          <p><a href="https://www.vz.lt/vadyba/personalo-valdymas/2018/05/23/geidziamiausias-darbdavys-2018-top10-didziuju-darbdaviu/" target="_blank" class="link-with-icon">Читать больше <i class=" icon-chevron-right"></i></a></p>
         </div>
       </div>
     </div>
   </section>
+  <!-- END: section -->
   
   <!-- START: footer -->
   <footer role="contentinfo" class="probootstrap-footer">
