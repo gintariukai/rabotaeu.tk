@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RabotaEU - Darbas, Mokymai, kvalifikacijos įgijimas Europos Sąjungoje įstatymų numatyta tvarka,</title>
-    <meta name="description" content="RataEU - Darbas, Mokymai rabotaeu.tk">
-    <meta name="keywords" content="Darbas, Mokymai, rabotaeu, rabotavlitve, workready">
+    <title>РаботаЕС - Работа, Обучение, получение квалификации в Европейском Союзе в соответствии с законом,</title>
+    <meta name="description" content="РаботаЕС - Работа, Обучение rabotaeu.tk">
+    <meta name="keywords" content="Работа, Обучение, работаЕС, работавлитве, готовработать">
     
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
@@ -25,7 +25,6 @@
     <?php
 
     $date = date("d.m.y");
-    $backurl = "index.html";
 
     $full_nameErr = $emailErr = $genderErr = $phoneErr ="";
     $full_name = $email = $gender = $phone ="";
@@ -44,10 +43,10 @@
     }
       
     if (isset($_POST["submit"])) {
-    $to = "gintariukai@hotmail.com"; // Here you need to write an e-mail, where letters will be sent.
-    $from = "gintaras.jakuntavicius@gmail.com"; // // Here you need to write an e-mail from whom letters will come
+    $to = "gintaras.jakuntavicius@gmail.com"; // Здесь нужно написать e-mail, куда будут приходить письма
+    $from = "gintaras.jakuntavicius@gmail.com"; // // Здесь нужно написать e-mail, от кого будут приходить письма
     $full_name = $_POST["full_name"];
-    $subject = "Form to send messages from the site";
+    $subject = "Форма отправки сообщений с сайта";
     $message = "Full_name: ". $full_name . " | Email: "  . $_POST["email"] . " | Phone: " . $_POST["phone"];
 
     $headers = "From:" . $from;
@@ -62,7 +61,7 @@
     fwrite($fp, $savestring);
     fclose($fp);
 
-    //    echo "Ačiū už Jūsų domėjimąsi darbu Lietuvoje.";
+    //    echo "Спасибо что интересуетесь работой в Литве.";
       
     ini_set("display_errors","On");
     
@@ -70,11 +69,11 @@
       
     ?>
     <div class="col-md-12 text-center"> 
-      <h1 class="probootstrap-animate"><span style="color:blue">Ačiū už Jūsų domėjimąsi darbu Lietuvoje.</span></h1>
+      <h1 class="probootstrap-animate"><span style="color:blue">Спасибо что интересуетесь работой в Литве.</span></h1>
       <div class="probootstrap-subtitle probootstrap-animate">
-        <h2><span style="color:blue">Mes Jums paskambinsim. </span></h2>
+        <h2><span style="color:blue">Мы Вам позвоним. </span></h2>
       </div>
-      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk">Į pradžią <i class=" icon-chevron-right"></i></a></p>
+      <p class="watch-intro probootstrap-animate"><a href="https://rabotaeu.tk/index-ru.html">В начало <i class=" icon-chevron-right"></i></a></p>
     </div>
       
     <script src="js/scripts.min.js"></script>
